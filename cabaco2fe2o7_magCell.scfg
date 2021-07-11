@@ -1,0 +1,11 @@
+#changes can be done within the textfile too, but proper functionality cannot be assured
+#structuretype:
+hexagonal
+#from left to right: a b c in reciprocal Angstroem
+11.1556	11.0864	10.3054
+#from left to right: alpha beta gamma in degree
+89.955	90.074	120.219
+#Orientationmatrix: a* b* c*
+0.026461	0.069131	-0.072195
+0.039746	0.078009	0.064463
+0.092095	0.00564930	-0.006963

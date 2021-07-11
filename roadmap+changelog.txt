@@ -1,0 +1,84 @@
+changelog and futureroadmap regarding the program Heidiplot.py
+developed for plotting neutron singlecrystal diffraction data taken at HEiDi at the FRMII, Munich
+
+Version 1.0: 
+	Todo:
+	1. should be assumed bugfree
+	2. no obvious additional features need to be implemented
+
+Version 0.3:
+	Todo:
+	1. undergo betatesting by colleagues and Martin Meven
+	2. include proposed changes from betatesting
+
+Version 0.2:
+	Todo:
+	1. undergo alphatesting by colleagues and Martin Meven
+	2. include proposed changes from alphatesting
+
+Version 0.15:
+	Todo:
+	1. different types of scans can be plotted together <-- need to be provided
+	2. include Brillouinzones for the various structuretypes
+	3. exception handling for plot configfile
+	4. options to enable faster rotation of plots:
+		a. show only the xth point
+		b. threshold in intensity -> points below get dropped (absolute or relative to max) 
+
+Version 0.14:
+	- menu: new plot functionality
+	- check if current plot should be discarded
+	- orientation mat redefined, because Heidiconfig showed actually a* b* c* which is the real omat
+	- Peak (hkl): problems with missing separators solved
+	Todo:
+	1. exception handling for structure configfile
+	2. check on BZ for magnetic and structural unit cell separate
+	3. create true unique key for every measurement
+	4. give propositions, how to avoid current warning
+	5. include A. Glavics propositions:
+		1. change background to white: fig.facecolor?
+		2. tabbing order for boundaries, could be done with hbox
+		4. plot within mainframe
+		5. change functions to numpy implementation
+		7. define constants globally in caps at beginning of lib
+	
+
+Version 0.13: - released 13.3.2012
+	- readme including a short manual
+	- Button to unload measurements from a single gnuplotfile
+	- option to scale plotted points added
+	- some design tweaking
+	- menubar rewritten: Help added with about and manual
+	- docstrings for the library functions
+	- comparing to None with "is"
+	- functionality of saving and loading complete plots implemented -> in manual
+	- open/save: if nothing is selected open/save button should not function
+	- update sliderpos after loading
+			 
+Version 0.12: - released 9.3.2012
+	- include various crystal structures (is the formula in umrechMag2c for every type correct?)
+	- exception handling for entries in structurevalues, needs to be float convertable and if matrix is consistent with structuretype and length
+	- include aStar and alphaStar etc. calculations within 'class crystalStructure' (Betrag von a* = aStar)
+	- exception handling for entries in boundaries
+	- optimize plotting boundaries h, k and l, if not specified choose +/-hAbsmax, +/-kAbsmax and +/-lAbsmax
+	- show Message, if due to boundaries no points are shown
+	- minor fixes on omat and angles: internal the correct omat and angles in rad is saved, but user works with omat a* b* c* and angles degrees
+	
+Version 0.11: - released 8.3.2012
+	- commentaries in config file inserted, in order to enable manual alteration
+	- any measurements on hexagonal crystals can be plotted
+	- orientation Matrix got included
+	- changelog and roadmap added
+
+Version 0.1: (State Martin Meven looked at) - released 8.3.2012
+	- works with CaBaCo2FeO7
+	- plotting options: nuclear Peaks, magnetic Peaks, Brillouinzone
+	- export to gnuplotscript
+	- plotting boundaries: h,k,l,T
+	- save and load configfile for crystalstructure
+
+developed by Johannes Reim, email: j.reim@fz-juelich.de,
+JCNS-2 and PGI-4, Institute for scatteringmethods,
+Forschungszentrum Juelich
+
+Thank you for using this program and I welcome any propositions for improvement

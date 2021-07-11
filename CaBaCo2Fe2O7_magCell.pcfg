@@ -1,0 +1,20 @@
+#changes can be done within the textfile too, but proper functionality cannot be assured
+#structuretype:
+hexagonal
+#from left to right: a b c in reciprocal Angstroem
+11.1556	11.0864	10.3054
+#from left to right: alpha beta gamma in degree
+89.955	90.074	120.219
+#Orientationmatrix: a* b* c*
+0.026461	0.069131	-0.072195
+0.039746	0.078009	0.064463
+0.092095	0.005649	-0.006963
+#loaded measurement files:
+/home/reim/Programmierung/HEiDiplot/cbcfoI2k5_30LC_magCell_long.gpl
+#plotting boundaries (h,k,l,T):
+None None
+None None
+0.0 2.0
+None None
+#plotting options:
+False True True 150
